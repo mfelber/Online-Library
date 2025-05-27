@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Account Activation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    h2 {
+      color: #007bff;
+    }
+    .button {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .code {
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #efefef;
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 10px;
+      letter-spacing: 3px;
+    }
+    p {
+      line-height: 1.6;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <p th:text="'Hello' + ${userName} + ','">
+  <p>Thank you for registering with us!</p>
+  <p>Please use the following activation code to activate your account:</p>
+  <div class="code"><span th:text="${activationCode}"></span></div>
+  <p>Or simply click the button below to confirm your registration:</p>
+  <a th:href="${confirmationUrl}" target="_blank" class="button">Activate Account</a>
+  <p>If you did not sign up for this account, please disregard this email.</p>
+  <div class="footer">
+    &copy; 2025 Your Company. All rights reserved.
+  </div>
+</div>
+</body>
+</html>
