@@ -34,7 +34,7 @@ POST /api/v1/books/cover/{bookId} Upload book cover (Multipart form)
 
 Method: POST
 
-URL: http://localhost:8080/api/books/cover/{bookId}
+URL: http://localhost:8088/api/books/cover/{bookId}
 
 Body: form-data
 
