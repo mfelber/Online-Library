@@ -2,11 +2,10 @@ Important: Don’t forget to retrieve the bearer authentication token from local
 
 Book Management Application This application is designed for managing books – it includes a REST API to store, update, and retrieve book data. It's built with Spring Boot and uses a PostgreSQL database.
 
-🐳 Docker The application includes a Dockerfile, making it easy to build and run in a containerized environment.
-
-✅ Run with Docker Compose (example) bash Copy Edit docker-compose up --build Or just with Docker:
-
-bash Copy Edit docker build -t library-app . docker run -p 8080:8080 library-app The app will be available at: http://localhost:8080
+🐳 Run with Docker
+To start the application using Docker, simply navigate to the docker folder and run:
+docker-compose up
+This will automatically build and start all necessary containers. The app will be available at: http://localhost:8088
 
 ✉️ Email Verification The application includes functionality for email-based account verification.
 
