@@ -22,5 +22,6 @@ public class BookResponse {
   private String isbn;
   private byte[] cover;
   private double rating;
+  private String comment;
 
 }

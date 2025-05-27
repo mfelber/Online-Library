@@ -34,10 +34,10 @@ application:
   security:
     jwt:
       secret-key: 8RCVuS+MiDLugFF5pg88uhL7aXDhEm7AZIVWTUIy2f8=
-      expiration: 8640000
+      expiration: 8640000000
   mailing:
     frontend:
-      activation-url: http//localhost:4200/activate-account
+      activation-url: http://localhost:4200/activate-account
   file:
     uploads:
       book-cover-output-path: ./uploads

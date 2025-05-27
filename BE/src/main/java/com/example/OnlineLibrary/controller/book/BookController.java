@@ -69,6 +69,7 @@ public class BookController {
     return ResponseEntity.ok(bookService.approveReturnBook(bookId,currentUser));
   }
 
+
   @PostMapping(value = "/cover/{bookId}", consumes = "multipart/form-data")
   public ResponseEntity<?> uploadBookCoverPicture(@PathVariable("bookId") Long bookId,
       @Parameter()

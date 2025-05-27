@@ -26,10 +26,11 @@ public class SecurityConfig {
 
   @Bean
   public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-    http.cors(withDefaults()).csrf(AbstractHttpConfigurer::disable)
+    http.cors(withDefaults())
+        .csrf(AbstractHttpConfigurer::disable)
         .authorizeHttpRequests(authorizeRequests ->
             authorizeRequests.requestMatchers(
-                "/api/v1/auth/**",
+                "/auth/**",
                 "/v2/api-docs",
                 "/v3/api-docs",
                 "/v3/api-docs/**",

@@ -1,0 +1,22 @@
+<div class="card" style="width: 20rem">
+
+  <img height="200" [src]="bookCover" class="card-img-top" alt="..." >
+  <div class="card-body">
+    <h5 class="card-title fs-6 text-nowrap fw-bold mb-1"><i class="fa-solid fa-book"></i>&nbsp;{{book.title}}</h5>
+    <h5 class="card-subtitle fs-6 text-secondary mt-1"><i class="fa-solid fa-user"></i>&nbsp;{{book.author}}</h5>
+<!--    <h6 class="card-subtitle fs-6 text-secondary mt-1"><i class="fa-solid fa-user"></i>&nbsp;{{book.isbn}}</h6>-->
+    <hr>
+    <p class="card-text">{{book.description}}</p>
+  </div>
+  <div class="card-footer d-flex gap-2 justify-content-between align-items-center">
+
+    <div class="d-flex gap-2">
+    5 stars
+    </div>
+
+    <div class="d-flex gap-2">
+      <i (click)="onBorrow()" class="fas fa-basket-shopping"></i>
+    </div>
+
+  </div>
+</div>

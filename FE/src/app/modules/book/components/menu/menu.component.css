@@ -1,0 +1,14 @@
+li > a {
+  color: white;
+  &:hover {
+    color: #F39C12;
+  }
+}
+
+li > a.active {
+  color: #F39C12;
+}
+
+.custom-navbar {
+  background-color: #2C3E50;
+}
