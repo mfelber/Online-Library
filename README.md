@@ -9,7 +9,7 @@ This will automatically build and start all necessary containers. The app will b
 
 ✉️ Email Verification The application includes functionality for email-based account verification.
 
-If you're using a frontend (e.g., Angular), it can interact with this system. A local email client (like MailDev) is available at:
+A local email client (like MailDev) is available at:
 
 👉 http://localhost:1080/
 
